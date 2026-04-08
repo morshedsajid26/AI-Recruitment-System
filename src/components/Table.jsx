@@ -69,8 +69,8 @@ export default function Table({
   return (
     <div className="w-full bg-white">
       {/* ==== GLOBAL FILTER (SEARCH) AND FILTERS ROW ==== */}
-      <div className="flex justify-between items-center mb-6">
-        <div className="w-1/2 max-w-md">
+      <div className="flex md:flex-row flex-col justify-between items-center mb-6">
+        <div className="w-1/2 max-w-full md:max-w-xl">
           <input
             type="text"
             value={globalFilter ?? ""}
@@ -87,7 +87,7 @@ export default function Table({
         )}
       </div>
 
-      <div className="w-full">
+      <div className="w-full overflow-x-auto">
         <table className={`w-full text-left border-collapse ${tableClass}`}>
           {/* ==== TABLE HEADER ==== */}
           <thead>

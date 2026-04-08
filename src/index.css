@@ -20,3 +20,7 @@
   --font-montserrat: "Montserrat", sans-serif; 
   
 }
+
+button {
+  cursor: pointer;
+}

@@ -21,7 +21,7 @@ export default function Header({ onMenuClick }) {
 
       <div className="flex items-center justify-between w-full">
 
-        <div className=" bg-amb00 relative">
+        <div className="  hidden md:block relative ">
 
           <input
             type="text"

@@ -6,6 +6,7 @@ import AuthLayout from "../layout/AuthLayout";
 //dashboard pages
 import Overview from "../pages/dashboardPage/Overview";
 import Candidate from "../pages/dashboardPage/Candidate";
+import CandidateDetails from "../pages/dashboardPage/CandidateDeatils";
 import Settings from "../pages/dashboardPage/Settings";
 
 
@@ -39,6 +40,7 @@ const router = createBrowserRouter([
       // admin
       { path: "/", element: <Overview /> },
       { path: "/candidate", element: <Candidate /> },
+      { path: "/candidate/details/:id", element: <CandidateDetails /> },
       
       { path: "settings", element: <Settings /> },
       

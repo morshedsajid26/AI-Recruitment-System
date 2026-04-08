@@ -1,8 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { FiFilter, FiEye, FiChevronDown } from 'react-icons/fi';
 import Table from '../../components/Table';
+import { Link } from 'react-router-dom';
 
-const candidatesData = [
+export const candidatesData = [
   {
     id: 1,
     name: "John Smith",
@@ -232,10 +233,12 @@ const Candidate = () => {
       width: "15%",
       render: (row) => (
         <div className="flex justify-start w-full">
+          <Link to={`/candidate/details/${row.id}`} >
           <button className="flex items-center gap-2 bg-[#2B7FFF] text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-600 transition-colors shadow-sm">
             <FiEye size={16} />
             View
           </button>
+          </Link>
         </div>
       ),
       sortable: false,

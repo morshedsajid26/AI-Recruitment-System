@@ -72,7 +72,7 @@ const Overview = () => {
     <div>
      <div className="grid grid-cols-12 gap-x-15 gap-y-7">
 
-      <div className="bg-white shadow-md rounded-lg p-6 col-span-3">
+      <div className="bg-white shadow-md rounded-lg p-6 col-span-12 md:col-span-3">
         <div className="p-3 rounded-xl bg-[#2B7FFF] w-fit">
         <FiUsers size={24} className="text-white " />
 
@@ -81,7 +81,7 @@ const Overview = () => {
         <p className="text-gray-600 mt-1.5">Total Candidates</p>
       </div>
 
-      <div className="bg-white shadow-md rounded-lg p-6 col-span-3">
+      <div className="bg-white shadow-md rounded-lg p-6 col-span-12 md:col-span-3">
         <div className="p-3 rounded-xl bg-[#FB2C36] w-fit">
         <GrDocumentMissing size={24} className="text-white " />
 
@@ -90,7 +90,7 @@ const Overview = () => {
         <p className="text-gray-600 mt-1.5">Missing Docs</p>
       </div>
 
-      <div className="bg-white shadow-md rounded-lg p-6 col-span-3">
+      <div className="bg-white shadow-md rounded-lg p-6 col-span-12 md:col-span-3">
         <div className="p-3 rounded-xl bg-[#FF6900] w-fit">
         <MdErrorOutline  size={24} className="text-white " />
 
@@ -99,7 +99,7 @@ const Overview = () => {
         <p className="text-gray-600 mt-1.5">Quality failed</p>
       </div>
 
-      <div className="bg-white shadow-md rounded-lg p-6 col-span-3">
+      <div className="bg-white shadow-md rounded-lg p-6 col-span-12 md:col-span-3">
         <div className="p-3 rounded-xl bg-[#00C950] w-fit">
         <IoMdCheckmarkCircleOutline size={24} className="text-white " />
 
@@ -109,7 +109,7 @@ const Overview = () => {
       </div>
 
 
-      <div className="bg-white shadow-md rounded-lg p-6 col-span-6">
+      <div className="bg-white shadow-md rounded-lg p-6 col-span-12 md:col-span-6">
         <h3 className="text-lg font-semibold text-[#101828] mb-4">Alerts</h3>
 
         <div className="flex flex-col gap-3">
@@ -126,7 +126,7 @@ const Overview = () => {
       </div>
 
 
-      <div className="bg-white shadow-md rounded-lg p-6 col-span-6">
+      <div className="bg-white shadow-md rounded-lg p-6 col-span-12 md:col-span-6">
         <h3 className="text-lg font-semibold text-[#101828] mb-4">Activity Feed</h3>
 
         <div className="flex flex-col gap-6 mt-2">
