@@ -19,14 +19,14 @@ export default function Sidebar({ isOpen, onClose }) {
   
   const navLinks = [
     { name: "Overview", path: "/", icon: "material-symbols:dashboard-outline" },
-    { name: "Candidate", path: "/cv/automation/platform", icon: "lucide:users" },
-    { name: "Document", path: "/a", icon: "mi:document" },
-    { name: "Compliance", path: "/b", icon: "charm:circle-tick" },
-    { name: "Compliance Packs", path: "/c", icon: "solar:box-outline" },
-    { name: "References", path: "/d", icon: "lets-icons:message" },
-    { name: "Organizations", path: "/d", icon: "codicon:organization" },
-    { name: "User Management", path: "/e", icon: "tabler:user" },
-    { name: "Settings", path: "/e", icon: "material-symbols-light:settings-outline-rounded" },
+    { name: "Candidate", path: "/candidate", icon: "lucide:users" },
+    { name: "Document", path: "/document", icon: "mi:document" },
+    { name: "Compliance", path: "/compliance", icon: "charm:circle-tick" },
+    { name: "Compliance Packs", path: "/compliance/packs", icon: "solar:box-outline" },
+    { name: "References", path: "/references", icon: "lets-icons:message" },
+    { name: "Organizations", path: "/organizations", icon: "codicon:organization" },
+    { name: "User Management", path: "/user/management", icon: "tabler:user" },
+    { name: "Settings", path: "/settings", icon: "material-symbols:settings-outline-rounded" },
   ];
 
   return (

@@ -4,7 +4,8 @@ import DashboardLayout from "../layout/DashboardLayout";
 import AuthLayout from "../layout/AuthLayout";
 
 //dashboard pages
-import Home from "../pages/dashboardPage/Home";
+import Overview from "../pages/dashboardPage/Overview";
+import Candidate from "../pages/dashboardPage/Candidate";
 import Settings from "../pages/dashboardPage/Settings";
 
 
@@ -15,7 +16,6 @@ import ResetPassword from "../pages/auth/ResetPassword";
 import NewPassword from "../pages/auth/NewPassword";
 import Success from "../pages/auth/Success";
 import OTP from "../pages/auth/OTP";
-import BulkImport from "../pages/dashboardPage/BulkImport";
 
 const router = createBrowserRouter([
   //  AUTH ROUTES
@@ -37,8 +37,8 @@ const router = createBrowserRouter([
     element: <DashboardLayout />,
     children: [
       // admin
-      { path: "/", element: <Home /> },
-      { path: "cv/automation/platform", element: <BulkImport /> },
+      { path: "/", element: <Overview /> },
+      { path: "/candidate", element: <Candidate /> },
       
       { path: "settings", element: <Settings /> },
       
